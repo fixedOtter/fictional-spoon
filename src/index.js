@@ -3,6 +3,7 @@
 //
 
 import counter from './libs/counter';
+import './css/style.css';
 
 counter(69);
 
