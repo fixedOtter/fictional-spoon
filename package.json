@@ -1,0 +1,26 @@
+{
+  "name": "fictional-spoon",
+  "version": "1.2.3",
+  "description": "this is such a crazy cool webapp",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fixedOtter/fictional-spoon.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "fixedOtter",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fixedOtter/fictional-spoon/issues"
+  },
+  "homepage": "https://github.com/fixedOtter/fictional-spoon#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
