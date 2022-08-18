@@ -8,6 +8,15 @@ module.exports = {
     filename: 'unmini.js', // what / where the file will be named
     path: path.resolve(__dirname, 'dist'), // where the dist folder will be made
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'), // definint ghe directory that we are outputting to
+    },
+    compress: true,
+    port: 6969,
+    hot: true,
+    watchFiles: ['./src/index.html']
+  },
   module: {
     rules: [
       {
