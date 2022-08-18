@@ -3,7 +3,11 @@
 //
 
 import counter from './libs/counter';
+import createCards from './libs/createCards';
 import './css/style.css';
+
+createCards(['ichi', 'ni', 'san', 'yong', 'go']);
+
 
 counter(69);
 

@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -14,5 +15,13 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'i love webpack', // title in the html file we're going to generate
+      filename: 'index.html', // filename of the generated html file
+      template: path.join(__dirname, 'src/index.html'), // template html to build from
+      inject: 'body' // will inject the javascript into the body instead of the head
+    })
+  ],
 };

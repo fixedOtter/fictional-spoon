@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/counter */ \"./src/libs/counter.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n//\n// made by fixedOtter on 17.8.2022\n//\n\n\n\n\n(0,_libs_counter__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(69);\n\nconsole.log('workds!');\n\n//# sourceURL=webpack://fictional-spoon/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/counter */ \"./src/libs/counter.js\");\n/* harmony import */ var _libs_createCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./libs/createCards */ \"./src/libs/createCards.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n//\n// made by fixedOtter on 17.8.2022\n//\n\n\n\n\n\n(0,_libs_createCards__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(['ichi', 'ni', 'san', 'yong', 'go']);\n\n\n(0,_libs_counter__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(69);\n\nconsole.log('workds!');\n\n//# sourceURL=webpack://fictional-spoon/./src/index.js?");
 
 /***/ }),
 
@@ -127,6 +127,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst counter = (num) => {\n  while(num--) console.log(num);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (counter);\n\n//# sourceURL=webpack://fictional-spoon/./src/libs/counter.js?");
+
+/***/ }),
+
+/***/ "./src/libs/createCards.js":
+/*!*********************************!*\
+  !*** ./src/libs/createCards.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createCards(items) {\n  const holder = document.getElementById('cardHolder');\n\n  for (let i = 0; i < items.length; i++) {\n    holder.insertAdjacentElement('afterbegin', `<p>${items[i]}</p>`);\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createCards);\n\n//# sourceURL=webpack://fictional-spoon/./src/libs/createCards.js?");
 
 /***/ })
 
