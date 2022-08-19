@@ -10,8 +10,10 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.get('/', (req, res) => {
-  res.send('goten boi');
+app.get('/api/test', (req, res) => {
+  res.send({
+    text: 'i am talking to you from the backend boii'
+  });
 });
 
 app.listen(PORT, () => console.log(`i can hear you on port ${PORT}`));
