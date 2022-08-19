@@ -25,5 +25,8 @@
   "homepage": "https://github.com/fixedOtter/fictional-spoon#readme",
   "devDependencies": {
     "concurrently": "^7.3.0"
+  },
+  "dependencies": {
+    "idb": "^7.0.2"
   }
 }
