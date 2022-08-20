@@ -4,7 +4,22 @@
 
 // imported modules
 import './css/style.css';
+import db from './db';
 
+db.init()
+  .then(async(data) => {
+    // console.log(`db setup ${data}`); // console logging the data from the database
+    // const itemIndex = await db.makeMuffin({ // awaiting the make muffin function
+    //   muffinName: 'chocolate chip' // passing in this data to be added to the db
+    // });
+
+    // console.log(itemIndex);
+
+    const muffins = await db.find();
+    console.log(muffins);
+
+  })
+  .catch((err) => console.error(err));
 
 
 
