@@ -4,7 +4,7 @@
 
 // imported modules
 import './css/style.css';
-import db from './db';
+import db from '../db';
 
 db.init()
   .then(async(data) => {
